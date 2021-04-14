@@ -1,0 +1,15 @@
+data/
+cfg/
+.ipynb_checkpoints/
+.idea/
+oracle/
+__pycache__/
+log/
+*.egg-info/
+images/
+.tox/
+.vscode/
+*.jpg
+*.bat
+*.html
+*.deb
