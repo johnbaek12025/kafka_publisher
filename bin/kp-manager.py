@@ -1,5 +1,8 @@
 # Copyright 2021 ThinkPool, all rights reserved
 """
+- ctrl+c dose not work with DISABLE_OOB = ON in sqlnet.ora
+- run the below code as a makeshift
+  $ kill -9 `ps -ef | grep "python bin/kp-manager.py" | grep -v grep | awk '{print $2}'` 
 """
 
 __appname__ = "kafka-publisher-manager"
