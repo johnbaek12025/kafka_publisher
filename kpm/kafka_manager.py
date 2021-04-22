@@ -24,7 +24,7 @@ class KafkaPub(object):
                 bootstrap_servers=[self.uri],
                 value_serializer=lambda x: dumps(x).encode("utf-8"),
             )
-        except Exception as err:
+        except Exception as err: 
             logger.error(f"kafka connection to {self.uri} failed: {err}")
             raise
 
