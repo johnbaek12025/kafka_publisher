@@ -27,7 +27,7 @@ class Publisher(object):
                     d_news_crt = row.get("d_news_crt")
                     topic = row.get("topic")
 
-                    # broker 에 전송여부 상관없이, 읽어온 데이터는 무조서 성공처리
+                    # broker 에 전송여부 상관없이, 읽어온 데이터는 무조건 성공처리
                     self.change_requests_status(
                         sn=news_sn, d_crt=d_news_crt, news_code=news_code
                     )
